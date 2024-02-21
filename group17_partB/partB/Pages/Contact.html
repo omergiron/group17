@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../css/Contact.css">
+  <!-- Import the jquery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Script which adds the navigation menu to the page -->
+  <script>
+    $(function() {
+      $("#includeNavBar").load("navBar.html");
+    });
+  </script>
+</head>
+<body>
+  <div id="includeNavBar"></div>
+  <div class="Container">
+    <header>Contact Us</header>
+    <p>For inquiries on any subject, issues with your order, assistance with problem resolution, or just a friendly word – please feel free to contact us</p>
+    <form id="ContactForm">
+      <label>Email:</label>
+      <input type="email" name="email" id="email">
+      <label>First Name:</label>
+      <input type="text" name="First Name" id="FirstName">
+      <label>Last Name:</label>
+      <input type="text" name="Last Name" id="LastName">
+      <label>Phone Number:</label>
+      <input type="tel" name="Phone Number" id="PhoneNum">
+      <label>Your Message:</label>
+      <textarea name="Message" id="message"></textarea>
+      <input id="sendBtn" type="submit" value="Send">
+      <div id="msg"></div>
+    </form>
+  </div>
+  <script src="../js/Contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bracelets</title>
+  <link rel="stylesheet" href="../css/Jewelry.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script>
+      $(function() {
+         $("#includeNavBar").load("navBar.html");
+      });
+   </script>
+</head>
+<body>
+<div id="includeNavBar"></div>
+<div class="Container">
+  <div class="Products">
+    <img class="productImg" src="../img/BraceletsImg/Daniel.jpg">
+    <p>Daniel</p>
+    <p>149</p>
+    <p class="desc">צמיד פנינים</p>
+    <div class="Quantity">
+      <label id="DanielQuantity">Quantity:</label>
+      <input type="number">
+    </div>
+    <button id="Daniel">Add To Cart</button>
+  </div>
+
+  <div class="Products">
+    <img class="productImg" src="../img/BraceletsImg/Ema.jpg">
+    <p>Ema</p>
+    <p>107</p>
+    <p class="desc">צמיד אבנים זעירות אפור</p>
+    <div class="Quantity">
+      <label id="EmaQuantity">Quantity:</label>
+      <input type="number">
+    </div>
+    <button id="Ema">Add To Cart</button>
+  </div>
+
+  <div class="Products">
+    <img class="productImg" src="../img/BraceletsImg/Gili.jpg">
+    <p>Gili</p>
+    <p>97</p>
+    <p class="desc">צמיד אבנים זעירות בורדו</p>
+    <div class="Quantity">
+      <label id="GiliQuantity">Quantity:</label>
+      <input type="number">
+    </div>
+    <button id="Gili">Add To Cart</button>
+  </div>
+
+  <div class="Products">
+    <img class="productImg" src="../img/BraceletsImg/Yarden.jpg">
+    <p>Yarden</p>
+    <p>97</p>
+    <p class="desc">צמיד אבנים זעירות טורקיז</p>
+    <div class="Quantity">
+      <label id="YardenQuantity">Quantity:</label>
+      <input type="number">
+    </div>
+    <button id="Yarden">Add To Cart</button>
+  </div>
+</div>
+<div class="zoomImg">
+  <span class="exitBtn">&times;</span>
+  <img class="bigImg">
+</div>
+<script src="../js/Jewelry.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+  background-color: #DDD6C8;
+  font-family: "Bradley Hand", cursive;
+}
+
+.Main {
+  display: flex;
+  height: 100vh;
+  background-image: url("../img/EarringsImg/Keren.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: change 20s infinite ease-in-out;
+}
+
+@keyframes change {
+  0% {
+    background-image: url("../img/EarringsImg/Keren.jpg");
+  }
+  25% {
+    background-image: url("../img/NecklacesImg/Paz.jpg");
+  }
+  50% {
+    background-image: url("../img/BraceletsImg/Daniel.jpg");
+  }
+  75% {
+    background-image: url("../img/NecklacesImg/Sun.jpg");
+  }
+  100% {
+    background-image: url("../img/EarringsImg/Keren.jpg");
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background:black;
+  margin-top: 10px;
+  height: 50px;
+  align-items: center;
+  font-size: 110%;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}

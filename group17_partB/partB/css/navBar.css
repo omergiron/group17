@@ -1,0 +1,29 @@
+body{
+  background-color: #DDD6C8;
+  font-family: "Bradley Hand", cursive;
+}
+
+.Nav{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.Item{
+  margin: 10px;
+}
+
+li{
+  display: inline;
+  margin: 20px;
+}
+ li a{
+   color: black;
+   text-decoration: none;
+   font-size: 110%;
+ }
+
+ li a:hover {
+   font-size: 120%;
+ }
+
