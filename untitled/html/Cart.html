@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="../css/Cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script>
+      $(function() {
+         $("#includeNavBar").load("navBar.html");
+      });
+   </script>
+</head>
+<body>
+  <div id="includeNavBar"></div>
+  <!-- A table of the products that are in the shopping basket, after linking to the database it will be
+  possible to see the products that the customer has chosen -->
+  <table id="ItemsTable">
+    <tr class = "item">
+      <td><img src="../img/EarringsImg/Keren.jpg" alt="Keren"></td>
+      <td>Quantity : 1</td>
+      <td>Price : 149</td>
+      <td><button class="deleteBtn"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+    </tr>
+  </table>
+  <p id="Total">Total:0</p>
+  <a id="payment" href="Payment.html">Payment</a>
+  <div class="temporaryMassage">
+    <p id="tempMsg">
+      Welcome!<br><br>Free shipping on every purchase over 180 NIS
+    </p>
+  </div>
+  <script src="../js/Cart.js"></script>
+</body>
+</html>

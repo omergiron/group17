@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Area</title>
+  <link rel="stylesheet" href="../css/PersonalArea.css">
+  <!-- Import the jquery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Script which adds the navigation menu to the page -->
+  <script>
+    $(function() {
+      $("#includeNavBar").load("navBar.html");
+    });
+  </script>
+</head>
+<body>
+  <div id="includeNavBar"></div>
+  <header>Welcome Back!</header>
+  <div class="Details">
+    <p id="FullName">FullName: Omer giron</p>
+    <p id="MailAddress">MailAddress: omergi97@gmail.com</p>
+    <p id="Coins">Coins: 50</p>
+    <p id="OrderStatus">OrderStatus: done</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+  background-color: #DDD6C8;
+  font-family: "Bradley Hand", cursive;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.Products {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.Products img {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.Products img:hover {
+  opacity: 0.8;
+}
+
+.Quantity {
+  display: flex;
+  margin-top: 10px;
+  align-self: center;
+}
+
+p {
+  text-align: center;
+  padding: 0px;
+  margin: 5px;
+}
+
+.desc{
+  font-family: "Varela Round", sans-serif;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+button {
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  align-self: center;
+  font-family: "Bradley Hand", cursive;
+}
+
+button:hover {
+  background-color: rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+
+input {
+  width: 30px;
+  margin-left: 10px;
+  background-color: #DDD6C8;
+  border: 2px solid black;
+}
+
+.zoomImg {
+  display: none;
+  position: fixed;
+  width: 80%;
+  height: 90%;
+  top: 5%;
+  right: 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.exitBtn {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: 35px;
+  top: 15px;
+  color: white;
+  font-size: 70px;
+}
+
+.exitBtn:hover {
+  font-size: 80px;
+  cursor: pointer;
+}
+
+.bigImg {
+  margin: auto;
+  display: block;
+  height: 100%;
+}

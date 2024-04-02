@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Necklaces</title>
+  <link rel="stylesheet" href="../css/Jewelry.css">
+  <!-- Import the jquery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Script which adds the navigation menu to the page -->
+  <script>
+    $(function() {
+      $("#includeNavBar").load("navBar.html");
+    });
+  </script>
+</head>
+<body>
+  <div id="includeNavBar"></div>
+  <div class="Container">
+    <div class="Products">
+      <img class="productImg" src="../img/NecklacesImg/Maya.jpg">
+      <p>Maya</p>
+      <p>149</p>
+      <p class="desc">שרשרת כסף 921 עם אבן חן</p>
+      <div class="Quantity">
+        <label id="MayaQuantity">Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Maya">Add To Cart</button>
+    </div>
+
+    <div class="Products">
+      <img class="productImg" src="../img/NecklacesImg/Daria.jpg">
+      <p>Daria</p>
+      <p>90</p>
+      <p class="desc">שרשרת גולדפילד עם אבן דמוי פנינה</p>
+      <div class="Quantity">
+        <label id="DariaQuantity">Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Daria">Add To Cart</button>
+    </div>
+
+    <div class="Products">
+      <img class="productImg" src="../img/NecklacesImg/Paz.jpg">
+      <p>Paz</p>
+      <p>170</p>
+      <p class="desc">שרשרת פנינים טבעיות זעירות</p>
+      <div class="Quantity">
+        <label id="PazQuantity">Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Paz">Add To Cart</button>
+    </div>
+
+    <div class="Products">
+      <img class="productImg" src="../img/NecklacesImg/Sun.jpg">
+      <p>Sun</p>
+      <p>96</p>
+      <p class="desc">שרשרת בסיס ציפוי זהב</p>
+      <div class="Quantity">
+        <label id="SunQuantity">Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Sun">Add To Cart</button>
+    </div>
+  </div>
+  <div class="zoomImg">
+    <span class="exitBtn">&times;</span>
+    <img class="bigImg">
+  </div>
+  <script src="../js/Jewelry.js"></script>
+</body>
+</html>

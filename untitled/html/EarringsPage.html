@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earrings</title>
+  <link rel="stylesheet" href="../css/Jewelry.css">
+  <!-- Import the jquery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Script which adds the navigation menu to the page -->
+  <script>
+    $(function() {
+      $("#includeNavBar").load("navBar.html");
+    });
+  </script>
+</head>
+<body>
+  <div id="includeNavBar"></div>
+  <div class="Container">
+    <div class="Products">
+      <img class="productImg" src="../img/EarringsImg/Keren.jpg">
+      <p>Keren</p>
+      <p>137</p>
+      <p class="desc">עגילי פנינה בציפוי זהב 24 קראט</p>
+      <div class="Quantity">
+        <label>Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Keren">Add To Cart</button>
+    </div>
+
+    <div class="Products">
+      <img class="productImg" src="../img/EarringsImg/Liri.jpg">
+      <p>Liri</p>
+      <p>96</p>
+      <p class="desc">עגילי חישוק פנינה ציפוי זהב</p>
+      <div class="Quantity">
+        <label>Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Liri">Add To Cart</button>
+    </div>
+
+    <div class="Products">
+      <img class="productImg" src="../img/EarringsImg/Gal.jpg">
+      <p>Gal</p>
+      <p>95</p>
+      <p class="desc">עגילים בשיבוץ פנינה</p>
+      <div class="Quantity">
+        <label>Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Gal">Add To Cart</button>
+    </div>
+
+    <div class="Products">
+      <img class="productImg" src="../img/EarringsImg/Mika.jpg">
+      <p>Mika</p>
+      <p>206</p>
+      <p class="desc">עגילי פנינה ירח בציפוי זהב 22 קראט</p>
+      <div class="Quantity">
+        <label>Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Mika">Add To Cart</button>
+    </div>
+  </div>
+  <div class="zoomImg">
+    <span class="exitBtn">&times;</span>
+    <img class="bigImg">
+  </div>
+  <script src="../js/Jewelry.js"></script>
+</body>
+</html>

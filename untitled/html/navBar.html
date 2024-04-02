@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>navBar</title>
+  <link rel="stylesheet" href="../css/navBar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="Nav">
+    <a href="Y&OHomePage.html"><img class="Item" src="../img/y&o%20logo.jpg"></a>
+    <ul>
+      <li><a class="Item" href="EarringsPage.html">Earrings</a></li>
+      <li><a class="Item" href="Necklaces.html">Necklaces</a></li>
+      <li><a class="Item" href="Rings.html">Rings</a></li>
+      <li><a class="Item" href="Bracelets.html">Bracelets</a></li>
+    </ul>
+    <div class="Icons">
+      <a class="Item" href="Cart.html"><i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i></a>
+      <button id="popUpBtn" class="item"><i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i></button>
+    </div>
+  </div>
+
+<div class="formContainer">
+    <div class="topBtn">
+      <button id="siBtn" class="active">Sign In</button>
+      <button id="jBtn">Join</button>
+      <button id="exit"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+  <div id="signInForm">
+    <form action="PersonalArea.html" method="post">
+      <label>Mail</label>
+      <input type="email" name="email" required>
+      <label>Password</label>
+      <input type="password" name="Password" required>
+      <input id="signInBtn" type="submit" value="Log In" >
+    </form>
+  </div>
+    <div id="signUpForm">
+      <form action="" method="get">
+      <label>Email:</label>
+      <input type="email" name="email" id="email" required>
+      <label>First Name:</label>
+      <input type="text" name="First Name" id="FirstName" required>
+      <label>Last Name:</label>
+      <input type="text" name="Last Name" id="LastName" required>
+      <label>Password:</label>
+      <input type="password" name="Password" id="Password" required>
+      <label>Phone Number:</label>
+      <input type="tel" name="Phone Number" id="PhoneNum" required>
+      <div id="msg"></div>
+      <input id="signUpBtn" type="submit" value="Sign Up">
+    </form>
+    </div>
+
+</div>
+
+<script src="../js/navBar.js"></script>
+</body>
+</html>

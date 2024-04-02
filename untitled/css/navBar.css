@@ -1,0 +1,116 @@
+body{
+  background-color: #DDD6C8;
+  font-family: "Bradley Hand", cursive;
+}
+
+.Nav{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: #DDD6C8;
+}
+
+.Item{
+  margin: 10px;
+}
+
+.Icons button{
+  background-color: #DDD6C8;
+  border: none;
+}
+
+li{
+  display: inline;
+  margin: 20px;
+}
+ li a{
+   color: black;
+   text-decoration: none;
+   font-size: 110%;
+ }
+
+ li a:hover {
+   font-size: 120%;
+ }
+
+ i {
+   color: black;
+   margin-right: 10px;
+ }
+
+.formContainer {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.topBtn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.topBtn button {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-family: "Bradley Hand", cursive;
+  font-size: 110%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.topBtn button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#exit{
+  width: 20%;
+}
+#signInForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#signUpForm {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+label {
+  align-self: start;
+  margin-bottom: 10px;
+}
+
+#signInBtn, #signUpBtn {
+  margin-top: 5px;
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rings</title>
+  <link rel="stylesheet" href="../css/Jewelry.css">
+  <!-- Import the jquery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Script which adds the navigation menu to the page -->
+  <script>
+    $(function() {
+      $("#includeNavBar").load("navBar.html");
+    });
+  </script>
+</head>
+<body>
+  <div id="includeNavBar"></div>
+  <div class="Container">
+    <div class="Products">
+      <img class="productImg" src="../img/RingsImg/Juliette.jpg">
+      <p>Juliette</p>
+      <p>270</p>
+      <p class="desc">כסף טהור בציפוי זהב אדום</p>
+      <div class="Quantity">
+        <label id="JulietteQuantity">Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Juliette">Add To Cart</button>
+    </div>
+
+    <div class="Products">
+      <img class="productImg" src="../img/RingsImg/Mili.jpg">
+      <p>Mili</p>
+      <p>215</p>
+      <p class="desc">כסף 921 בשיבוץ אבני חן זעירות</p>
+      <div class="Quantity">
+        <label id="MiliQuantity">Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Mili">Add To Cart</button>
+    </div>
+
+    <div class="Products">
+      <img class="productImg" src="../img/RingsImg/Mia.jpg">
+      <p>Mia</p>
+      <p>259</p>
+      <p class="desc">כסף טהור 925</p>
+      <div class="Quantity">
+        <label id="MiaQuantity">Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Mia">Add To Cart</button>
+    </div>
+
+    <div class="Products">
+      <img class="productImg" src="../img/RingsImg/Hagar.jpg">
+      <p>Hagar</p>
+      <p>106</p>
+      <p class="desc">זהב אדום 14 קראט</p>
+      <div class="Quantity">
+        <label id="HagarQuantity">Quantity:</label>
+        <input type="number">
+      </div>
+      <button id="Hagar">Add To Cart</button>
+    </div>
+  </div>
+  <div class="zoomImg">
+    <span class="exitBtn">&times;</span>
+    <img class="bigImg">
+  </div>
+  <script src="../js/Jewelry.js"></script>
+</body>
+</html>
