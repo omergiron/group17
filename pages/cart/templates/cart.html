@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% set page_title = 'Cart' %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('cart.static', filename='css/cart.css') }}"/>
+    <script src="https://kit.fontawesome.com/06605cb3e5.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block page_main %}
+    <div id="userCart">{{ userCart }}</div>
+    <div id="main">
+    {% for item in userCart %}
+        <div class="products">
+            <form action="/deleteItem" method="get">
+                <input type="hidden" name="item_name" value="{{ item['productName'] }}">
+                <input type="hidden" name="item_quantity" value="{{ item['quantity'] }}">
+                <img class="ItemImage" src="{{ url_for('jewelry.static', filename= 'img/' ~ item['productName'] ~ '.jpg') }}">
+                <div class="details">
+                    <span class="item">Product name: {{ item['productName'] }}</span>
+                    <span class="item">Quantity: {{ item['quantity'] }}</span>
+                    <span class="item">Price: {{ item['productPrice'] }}</span>
+                </div>
+                <input type="submit" class="deleteBtn" value="X">
+            </form>
+        </div>
+    {% endfor %}
+    </div>
+
+  <p id="Total">Total: {{ total_pay }}</p>
+    <a id="payment" href="{{ url_for('homePage.index') }}">Payment</a>
+    {% if msg %}
+    <div id="temporaryMassage">
+    <button id="exitButton"><i id="exitIcon" class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+    <p id="tempMsg">
+      Welcome!<br><br>Free shipping on every purchase over 180 NIS
+    </p>
+  </div>
+    {% endif %}
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('cart.static', filename='js/cart.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% set page_title = 'Bracelets' %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('jewelry.static', filename='css/jewelry.css') }}"/>
+{% endblock %}
+
+{% block page_main %}
+    <div class="Container">
+  <div class="Products">
+    <img class="productImg" src="{{ url_for('jewelry.static', filename='img/daniel.jpg') }}">
+    <p>daniel</p>
+    <p>115</p>
+    <p class="desc">צמיד פנינים</p>
+      <form action="/addToCart" method="get">
+          <div class="Quantity">
+            <label>Quantity:</label>
+            <input class="quantityInput" type="number" name="quantity">
+            </div>
+          <input type="hidden" name="productName" value="daniel">
+          <button type="submit" class="addButton">Add To Cart</button>
+      </form>
+  </div>
+
+  <div class="Products">
+    <img class="productImg" src="{{ url_for('jewelry.static', filename='img/keren.jpg') }}">
+    <p>keren</p>
+    <p>190</p>
+    <p class="desc">צמיד אבנים זעירות טורקיז</p>
+      <form action="/addToCart" method="get">
+          <div class="Quantity">
+      <label>Quantity:</label>
+      <input class="quantityInput" type="number" name="quantity">
+    </div>
+          <input type="hidden" name="productName" value="keren">
+          <button type="submit" class="addButton">Add To Cart</button>
+      </form>
+
+  </div>
+
+  <div class="Products">
+    <img class="productImg" src="{{ url_for('jewelry.static', filename='img/daria.jpg') }}">
+    <p>daria</p>
+    <p>137</p>
+    <p class="desc">צמיד אבנים זעירות אפור</p>
+      <form action="/addToCart" method="get">
+          <div class="Quantity">
+              <label>Quantity:</label>
+              <input class="quantityInput" type="number" name="quantity">
+
+    </div>
+          <input type="hidden" name="productName" value="daria">
+          <button type="submit" class="addButton">Add To Cart</button>
+      </form>
+
+  </div>
+
+  <div class="Products">
+    <img class="productImg" src="{{ url_for('jewelry.static', filename='img/hagar.jpg') }}">
+    <p>hagar</p>
+    <p>115</p>
+    <p class="desc">צמיד אבנים זעירות בורדו</p>
+      <form action="/addToCart" method="get">
+          <div class="Quantity">
+      <label>Quantity:</label>
+      <input class="quantityInput" type="number" name="quantity">
+    </div>
+          <input type="hidden" name="productName" value="hagar">
+          <button type="submit" class="addButton">Add To Cart</button>
+      </form>
+
+  </div>
+    <div class="Products">
+    <img class="productImg" src="{{ url_for('jewelry.static', filename='img/gal.jpg') }}">
+    <p>gal</p>
+    <p>120</p>
+    <p class="desc">צמיד זהב משובץ אבנים</p>
+      <form action="/addToCart" method="get">
+          <div class="Quantity">
+            <label>Quantity:</label>
+            <input class="quantityInput" type="number" name="quantity">
+            </div>
+          <input type="hidden" name="productName" value="gal">
+          <button type="submit" class="addButton">Add To Cart</button>
+      </form>
+  </div>
+
+     <div class="Products">
+    <img class="productImg" src="{{ url_for('jewelry.static', filename='img/dana.jpg') }}">
+    <p>dana</p>
+    <p>85</p>
+    <p class="desc">צמיד משובץ אבנים ורודות</p>
+      <form action="/addToCart" method="get">
+          <div class="Quantity">
+            <label>Quantity:</label>
+            <input class="quantityInput" type="number" name="quantity">
+            </div>
+          <input type="hidden" name="productName" value="dana">
+          <button type="submit" class="addButton">Add To Cart</button>
+      </form>
+  </div>
+
+     <div class="Products">
+    <img class="productImg" src="{{ url_for('jewelry.static', filename='img/mia.jpg') }}">
+    <p>mia</p>
+    <p>134</p>
+    <p class="desc">צמיד חוטים</p>
+      <form action="/addToCart" method="get">
+          <div class="Quantity">
+            <label>Quantity:</label>
+            <input class="quantityInput" type="number" name="quantity">
+            </div>
+          <input type="hidden" name="productName" value="mia">
+          <button type="submit" class="addButton">Add To Cart</button>
+      </form>
+  </div>
+
+</div>
+<div class="zoomImg">
+  <span class="exitBtn">&times;</span>
+  <img class="bigImg">
+</div>
+    {% if message %}
+        <div class="tempMsg">
+            <p id="msg"> {{ message }}</p>
+            <button id="okBtn">OK</button>
+        </div>
+
+    {% endif %}
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('jewelry.static', filename='js/jewelry.js') }}"></script>
+{% endblock %}

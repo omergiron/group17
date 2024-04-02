@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>navBar</title>
+  <link rel="stylesheet" href="{{ url_for('navbar.static', filename='css/navbar.css') }}"/>
+    <script src="https://kit.fontawesome.com/06605cb3e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="Nav">
+      <a href="{{ url_for('homePage.index') }}"><img class="Item" src="{{ url_for('navbar.static', filename='img/y&o logo.jpg') }}"></a>
+    <ul>
+      <li class="Item">Earrings</li>
+      <li class="Item">Necklaces</li>
+      <li class="Item">Rings</li>
+      <li><a class="Item" href="{{ url_for('jewelry.index') }}">Bracelets</a></li>
+    </ul>
+    <div class="Icons">
+        {% if 'userName' in session %}
+            <p>Hello {{ session['userName'] }}</p>
+        {% endif %}
+      <a class="Item" href="{{ url_for('cart.index') }}"><i class="fa-solid fa-shopping-cart fa-3x" aria-hidden="true"></i></a>
+      <button id="popUpBtn" class="Item"><i class="fa-solid fa-user fa-3x" aria-hidden="true"></i></button>
+    </div>
+  </div>
+
+<div class="formContainer">
+    <p id="logged_in" hidden>{{ session['logged_in'] }}</p>
+        <div id="personalPopUp">
+            <h1>Welcome {{ session['userName'] }}!</h1>
+            <p id="FullName">name: {{ session['userName'] }}</p>
+            <p id="MailAddress">mail: {{ session['email'] }}</p>
+            <p id="Coins">coins: {{ session['coins'] }}</p>
+            <button id="logout"><a href="{{ url_for('navbar.logout') }}">Logout</a></button>
+        </div>
+        <div class="topBtn">
+            <button id="siBtn" class="active">Sign In</button>
+            <button id="jBtn">Join</button>
+            <button id="exit"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+        <div id="signInForm">
+            <form action="/login" method="post">
+                <label>Mail</label>
+                <input type="email" name="email" required>
+                <label>Password</label>
+                <input type="password" name="Password" required>
+                <input id="signInBtn" type="submit" value="Log In" >
+                {% if errorSI %}
+                    <p id="errorSI" style="color: red;">{{ errorSI }}</p>
+                {% endif %}
+            </form>
+        </div>
+        <div id="signUpForm">
+            <form action="/signUp" method="post">
+                <label>Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label>First Name:</label>
+                <input type="text" name="First Name" id="FirstName" required>
+                <label>Last Name:</label>
+                <input type="text" name="Last Name" id="LastName" required>
+                <label>Password:</label>
+                <input type="password" name="Password" id="Password" required>
+                <label>Phone Number:</label>
+                <input type="tel" name="Phone Number" id="PhoneNum" required>
+                <div id="msg"></div>
+                <input id="signUpBtn" type="submit" value="Sign Up">
+                {% if errorSU %}
+                    <p id="errorSU" style="color: red;">{{ errorSU }}</p>
+                {% endif %}
+            </form>
+        </div>
+</div>
+  <script src="{{ url_for('navbar.static', filename='js/navbar.js') }}"></script>
+</body>
+</html>

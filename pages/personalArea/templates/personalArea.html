@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% set page_title = 'Personal Area' %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('personalArea.static', filename='css/personalArea.css') }}"/>
+    <script src="https://kit.fontawesome.com/06605cb3e5.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block page_main %}
+    <h1>Welcome Back!</h1>
+  <div class="Details">
+    <p id="FullName">FullName: Omer giron</p>
+    <p id="MailAddress">MailAddress: omergi97@gmail.com</p>
+    <p id="Coins">Coins: 50</p>
+    <p id="OrderStatus">OrderStatus: done</p>
+  </div>
+{% endblock %}
